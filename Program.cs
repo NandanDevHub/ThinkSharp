@@ -1,4 +1,5 @@
 ﻿using ThinkSharp.Problems;
+using ThinkSharp.Programs;
 
 class Program
 {
@@ -9,8 +10,20 @@ class Program
 
         switch (input)
         {
-            case "00":
+            case "1":
                 HelloWorld.Run();
+                break;
+            case "2":
+                Printname.Run();
+                break;
+            case "3":
+                Addition.Run();
+                break;
+            case "4":
+                EvenOdd.Run();
+                break;
+            case "5":
+                ForLoop.Run();
                 break;
             default:
                 Console.WriteLine("Problem not found.");
