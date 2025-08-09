@@ -6,6 +6,9 @@ namespace ThinkSharp.Problems
     {
         public static void Run()
         {
+            Console.WriteLine("\n===========================================");
+            Console.WriteLine("      PROBLEM 1: Printing Hello World        ");
+            Console.WriteLine("=========================================== \n");
             Console.WriteLine("Hello, World!");
         }
     }

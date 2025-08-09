@@ -10,6 +10,9 @@ namespace ThinkSharp.Programs
     {
         public static void Run()
         {
+            Console.WriteLine("\n======================================");
+            Console.WriteLine("      PROBLEM 5: For Loop Example       ");
+            Console.WriteLine("======================================\n");
             Console.Write("Enter the number of times to print: ");
             var num = Convert.ToInt32(Console.ReadLine());
 

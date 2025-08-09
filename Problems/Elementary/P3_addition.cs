@@ -6,6 +6,9 @@ namespace ThinkSharp.Programs
     {
         public static void Run()
         {
+            Console.WriteLine("\n======================================");
+            Console.WriteLine("   PROBLEM 3: Addition of Two Numbers   ");
+            Console.WriteLine("======================================\n");
             Console.WriteLine("Enter first number:");
             int firstNumber = int.Parse(Console.ReadLine()!);
 

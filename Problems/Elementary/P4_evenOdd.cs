@@ -11,6 +11,9 @@ namespace ThinkSharp.Problems
     {
         public static void Run()
         {
+            Console.WriteLine("\n======================================");
+            Console.WriteLine("   PROBLEM 4: Even or Odd Number Check   ");
+            Console.WriteLine("======================================\n");
             Console.WriteLine("Enter a number:");
             int number = int.Parse(Console.ReadLine()!);
 
