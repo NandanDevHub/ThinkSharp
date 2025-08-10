@@ -1,33 +1,24 @@
-﻿using ThinkSharp.Problems;
-using ThinkSharp.Programs;
+﻿using ThinkSharp.Utils;
 
-class Program
+Console.Write("\nPlease Enter the Problem Number: ");
+try
 {
-    static void Main()
+    var input = int.Parse(Console.ReadLine()!);
+    var group = (input - 1) / 250 + 1;
+    switch (group)
     {
-        Console.WriteLine("Please Enter the Problem Number:");
-        var input = Console.ReadLine();
-
-        switch (input)
-        {
-            case "1":
-                HelloWorld.Run();
-                break;
-            case "2":
-                Printname.Run();
-                break;
-            case "3":
-                Addition.Run();
-                break;
-            case "4":
-                EvenOdd.Run();
-                break;
-            case "5":
-                ForLoop.Run();
-                break;
-            default:
-                Console.WriteLine("Problem not found.");
-                return;
-        }
+        case 1:
+            ProblemSet1Runner.RunProblemsSet1(input);
+            break;
+        default:
+            Console.WriteLine("Problem not found.");
+            break;
     }
+    Console.WriteLine("\n");
+    return;
+}
+catch
+{
+    Console.WriteLine("Please enter a valid number and try again.");
+    return;
 }
