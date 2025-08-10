@@ -27,6 +27,12 @@ namespace ThinkSharp.Utils
                 case 6:
                     AreaOfShapes.Run();
                     break;
+                case 7:
+                    OddNumbers.Run();
+                    break;
+                case 8:
+                    PositiveNegative.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
