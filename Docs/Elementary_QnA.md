@@ -159,6 +159,45 @@ long l = Convert.ToInt64("100000000000");
   - `Int64` = large box  
   Choose based on how big your number is.
 
+## Q: What does `ref` mean in C#?
+
+### Explanation
+
+- `ref` is a keyword used to pass a variable **by reference** to a method.
+- It allows the method to modify the **original** variable's value.
+- Without `ref`, variables are passed **by value** (a copy), so changes don’t affect the original.
+
+### Syntax
+
+```csharp
+void UpdateValue(ref int num)
+{
+    num = num + 10;
+}
+
+int x = 5;
+UpdateValue(ref x);  // x is now 15
+```
+
+- `ref` is required both in the method definition and at the call site.
+- The variable must be **initialized** before being passed.
+
+### Rules
+
+- Variable must be initialized before use.
+- Method can directly change the caller's variable.
+
+### Use Case
+
+- When you want a method to update one or more variables and reflect the changes outside.
+
+### Analogy
+
+- Passing **by value** is like handing someone a *photocopy*.
+- Passing **by reference** is like handing them the *original* — if they mark it, you see it too.
+
+
+
 
 
 
