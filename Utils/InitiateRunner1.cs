@@ -45,6 +45,9 @@ namespace ThinkSharp.Utils
                 case 12:
                     SumOFDigits.Run();
                     break;
+                case 13:
+                    ReverseInteger.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
