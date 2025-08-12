@@ -3,9 +3,9 @@ using ThinkSharp.Programs;
 
 namespace ThinkSharp.Utils
 {
-    public static class ProblemSet1Runner
+    public static class InitiateRunner1
     {
-        public static void RunProblemsSet1(int pID)
+        public static void RunProblems(int pID)
         {
             switch (pID)
             {
@@ -32,6 +32,12 @@ namespace ThinkSharp.Utils
                     break;
                 case 8:
                     PositiveNegative.Run();
+                    break;
+                case 9:
+                    LargestOfTwoNumbers.Run();
+                    break;
+                case 10:
+                    SwapTwoNumbers.Run();
                     break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
