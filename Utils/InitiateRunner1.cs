@@ -39,6 +39,12 @@ namespace ThinkSharp.Utils
                 case 10:
                     SwapTwoNumbers.Run();
                     break;
+                case 11:
+                    MultiplesOf3And5.Run();
+                    break;
+                case 12:
+                    SumOFDigits.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
