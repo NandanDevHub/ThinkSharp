@@ -48,6 +48,9 @@ namespace ThinkSharp.Utils
                 case 13:
                     ReverseInteger.Run();
                     break;
+                case 14:
+                    PalindromeInteger.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;

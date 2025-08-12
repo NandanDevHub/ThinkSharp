@@ -9,7 +9,7 @@ namespace ThinkSharp.Problems
             Console.WriteLine("==========================================\n");
 
             Console.Write("Enter a number: ");
-            int num = Convert.ToInt16(Console.ReadLine()!);
+            int num = Convert.ToInt32(Console.ReadLine()!);
             var n = num;
             int rev = 0;
 
