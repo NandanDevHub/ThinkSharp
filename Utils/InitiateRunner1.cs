@@ -51,6 +51,18 @@ namespace ThinkSharp.Utils
                 case 14:
                     PalindromeInteger.Run();
                     break;
+                case 15:
+                    SumOfBinaryDigits.Run();
+                    break;
+                case 16:
+                    FibonacciSeries.Run();
+                    break;
+                case 17:
+                    SumOFDigitsRecursion.Run();
+                    break;
+                case 18:
+                    FibonacciRecursion.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
