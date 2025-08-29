@@ -63,6 +63,9 @@ namespace ThinkSharp.Utils
                 case 18:
                     FibonacciRecursion.Run();
                     break;
+                case 19:
+                    Factorial.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
