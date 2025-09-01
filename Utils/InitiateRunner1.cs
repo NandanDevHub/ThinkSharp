@@ -66,6 +66,9 @@ namespace ThinkSharp.Utils
                 case 19:
                     Factorial.Run();
                     break;
+                case 20:
+                    FactorialRecursion.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
