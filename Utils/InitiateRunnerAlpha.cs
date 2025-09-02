@@ -3,7 +3,7 @@ using ThinkSharp.Programs;
 
 namespace ThinkSharp.Utils
 {
-    public static class InitiateRunner1
+    public static class InitiateRunnerAlpha
     {
         public static void RunProblems(int pID)
         {
@@ -68,6 +68,9 @@ namespace ThinkSharp.Utils
                     break;
                 case 20:
                     FactorialRecursion.Run();
+                    break;
+                case 21:
+                    PrimeNumbers.Run();
                     break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");

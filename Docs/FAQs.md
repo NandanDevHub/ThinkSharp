@@ -1,9 +1,9 @@
 # ThinkSharp Learning Concepts & FAQs
 
-Welcome to the ThinkSharp Elementary Q n A guide.  
+Welcome to the ThinkSharp Basic FAQs.  
 This document contains explanations, examples, and answers to common programming questions encountered while learning C# and problem-solving.
 
-## Q: Stack vs Heap
+## Q1: Stack vs Heap
 
 - **Stack**: Stores simple, short-lived data (value types).
 - **Heap**: Stores complex, long-lived data (reference types).
@@ -47,7 +47,8 @@ This document contains explanations, examples, and answers to common programming
 
 ---
 
-## #What is `$`?
+
+## Q2: What is `$`?
 
 - `$` is used before a string to enable **string interpolation**.
 - It allows you to embed variables or expressions directly inside the string using `{}`.
@@ -77,7 +78,9 @@ Hello, my name is Alice and I am 30 years old.
   - Template: `"Hello, {name}!"`
   - Fills in with actual value of `name` at runtime.
 
-## Q: What is the difference between `int.Parse()` and `Convert.ToInt32()`?
+---
+
+## Q3: What is the difference between `int.Parse()` and `Convert.ToInt32()`?
 
 ### Explanation
 
@@ -119,7 +122,9 @@ int c = Convert.ToInt32("abc"); // ❌ throws FormatException
 - `int.Parse()` is like expecting a perfect answer and throwing a tantrum if it’s missing.
 - `Convert.ToInt32()` is like being flexible — “No answer? I’ll assume it’s zero.”
 
-## Q: What is the difference between `Convert.ToInt16()`, `ToInt32()`, and `ToInt64()`?
+---
+
+## Q4: What is the difference between `Convert.ToInt16()`, `ToInt32()`, and `ToInt64()`?
 
 ### Explanation
 
@@ -159,7 +164,9 @@ long l = Convert.ToInt64("100000000000");
   - `Int64` = large box  
   Choose based on how big your number is.
 
-## Q: What does `ref` mean in C#?
+---
+
+## Q5: What does `ref` mean in C#?
 
 ### Explanation
 
@@ -196,6 +203,60 @@ UpdateValue(ref x);  // x is now 15
 - Passing **by value** is like handing someone a *photocopy*.
 - Passing **by reference** is like handing them the *original* — if they mark it, you see it too.
 
+---
+
+## Q6: What is the difference between `throw;` and `throw ex;` in C#?
+
+### Explanation
+
+- Both are used to throw exceptions in `catch` blocks, but they behave differently in terms of debugging and stack trace.
+
+### `throw;`
+
+- Re-throws the **original exception**.
+- Keeps the **original stack trace**, including the exact line where the error happened.
+- Best practice when you just want to pass the error upward.
+
+```csharp
+try
+{
+    // some code
+}
+catch (Exception ex)
+{
+    throw; // preserves original stack trace
+}
+```
+
+### `throw ex;`
+
+- Re-throws the same exception object (`ex`), but **resets the stack trace**.
+- You lose the original error line information.
+- Not recommended unless you're modifying the exception or doing custom logging.
+
+```csharp
+try
+{
+    // some code
+}
+catch (Exception ex)
+{
+    // do some logging
+    throw ex; // stack trace starts from here, not from original error
+}
+```
+
+### Key Difference
+
+| Feature         | `throw;`              | `throw ex;`                     |
+|------------------|------------------------|----------------------------------|
+| Stack trace kept | ✅ Yes                | ❌ No                            |
+| Recommended?     | ✅ Yes (in most cases) | ⚠️ Only if modifying or logging |
+
+### Analogy
+
+- `throw;` is like forwarding a message **with full history**.
+- `throw ex;` is like **copy-pasting** the error into a new message — it looks the same but loses its original trail.
 
 
 
