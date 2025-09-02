@@ -16,7 +16,7 @@ namespace ThinkSharp.Problems
 
             Console.Write("Enter the limit to print all the prime numbers: ");
             var input = int.Parse(Console.ReadLine()!);
-            string primeNumbers = string.Empty;
+            List<int> primeNos = [];
 
             if (input < 2)
             {
@@ -27,17 +27,22 @@ namespace ThinkSharp.Problems
             {
                 for (int i = 2; i <= input; i++)
                 {
+                    bool isPrime = true;
                     for (int j = 2; j * j <= i; j++)
                     {
-                        if (i % 2 != 0)
+                        if (i % j == 0)
                         {
-                            primeNumbers += ", ";
+                            isPrime = false;
                             break;
                         }
                     }
+                    if (isPrime)
+                    {
+                        primeNos.Add(i);
+                    }
                 }
 
-                Console.WriteLine($"The Prime Numbers uptill {input} are : {primeNumbers}");
+                Console.WriteLine($"The Prime Numbers up to {input} are: {string.Join(", ", primeNos)}");
             }
         }
     }
