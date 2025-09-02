@@ -8,7 +8,7 @@ try
     switch (group)
     {
         case 1:
-            InitiateRunner1.RunProblems(input);
+            InitiateRunnerAlpha.RunProblems(input);
             break;
         default:
             Console.WriteLine("Problem not found.");
