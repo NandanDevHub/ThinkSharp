@@ -1,7 +1,14 @@
-# ThinkSharp Learning Concepts & FAQs
+# D1-SharpEssentials
 
-Welcome to the ThinkSharp Basic FAQs.  
-This document contains explanations, examples, and answers to common programming questions encountered while learning C# and problem-solving.
+Welcome to **Sharp Essentials**—your go-to primer for mastering the core building blocks of C#. In this series, each “Sharp Essentials” note breaks down one fundamental concept into:
+
+- **Q&A format:** A clear question followed by a concise, practical answer.  
+- **Code snippets:** Real-world C# examples you can copy and run.  
+- **Analogies & tips:** Simple comparisons and best-practice pointers to cement your understanding.
+
+Dive in to strengthen your foundation, speed up your learning curve, and prepare for confident coding in C#.  
+
+---
 
 ## Q1: Stack vs Heap
 
@@ -258,7 +265,54 @@ catch (Exception ex)
 - `throw;` is like forwarding a message **with full history**.
 - `throw ex;` is like **copy-pasting** the error into a new message — it looks the same but loses its original trail.
 
+---
 
+## Q7: What is a `static` method, and why don’t we need an object to call it?
 
+### Explanation
 
+- A `static` method is tied to the **class itself**, not to an instance of the class.
+- You can call it using the class name directly, without creating an object.
 
+### Syntax Example
+
+```csharp
+class Helper
+{
+    public static void SayHello()
+    {
+        Console.WriteLine("Hello from static method!");
+    }
+}
+
+// Call without object:
+Helper.SayHello();
+```
+
+- No need to create an object like: `Helper h = new Helper();`
+
+### Key Points
+
+- Static methods:
+  - Cannot use `this`
+  - Cannot access non-static members (fields/methods)
+  - Are used for common utility-like functionality
+
+### Use Cases
+
+- Utility or helper methods (`Math.Sqrt()`, `Console.WriteLine()`)
+- Factory methods (`SomeClass.Create()`)
+
+### Comparison
+
+| Feature         | Static Method             | Instance (Non-Static) Method     |
+|------------------|----------------------------|----------------------------------|
+| Belongs to       | Class                     | Object                           |
+| Needs object?    | No                        | Yes                              |
+| Can access `this`| No                        | Yes                              |
+| Typical use      | Utilities, helpers        | Behavior using object data       |
+
+### Analogy
+
+- **Static** = Public phone in a mall — anyone can use it.
+- **Non-static** = Your personal mobile phone — tied to you (object).
