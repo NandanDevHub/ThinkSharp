@@ -1,4 +1,4 @@
-# D1-SharpEssentials
+# D1_SharpEssentials
 
 Welcome to **Sharp Essentials**—your go-to primer for mastering the core building blocks of C#. In this series, each “Sharp Essentials” note breaks down one fundamental concept into:
 
