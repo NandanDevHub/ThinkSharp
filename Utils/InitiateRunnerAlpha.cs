@@ -72,6 +72,12 @@ namespace ThinkSharp.Utils
                 case 21:
                     PrimeNumbers.Run();
                     break;
+                case 22:
+                    LargestPrimeFactor.Run();
+                    break;
+                case 23:
+                    PerfectNumber.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
