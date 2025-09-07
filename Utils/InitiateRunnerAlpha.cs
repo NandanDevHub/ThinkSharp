@@ -78,6 +78,9 @@ namespace ThinkSharp.Utils
                 case 23:
                     PerfectNumber.Run();
                     break;
+                case 24:
+                    ArmStrongNumber.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
