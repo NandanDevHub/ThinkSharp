@@ -19,6 +19,37 @@ namespace ThinkSharp.Problems
             Console.WriteLine("        PROBLEM 26: Selection Sort         ");
             Console.WriteLine("=========================================\n");
 
+            Console.WriteLine("Enter numbers separated by spaces:");
+            var input = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                Console.WriteLine("No input provided.");
+                return;
+            }
+
+            var numbers = input.Split(' ').Select(int.Parse).ToArray();
+            
+            Console.WriteLine("\nUnsorted Array: " + string.Join(",", numbers));
+
+            for (var i = 0; i < numbers.Length - 1; i++)
+            {
+                int minIndex = i;
+
+                for (var j = i + 1; j < numbers.Length; j++)
+                {
+                    if (numbers[j] < numbers[minIndex])
+                    {
+                        minIndex = j;
+                    }
+                }
+
+                var temp = numbers[i];
+                numbers[i] = numbers[minIndex];
+                numbers[minIndex] = temp;
+            }
+
+            Console.WriteLine("Sorted Array: " + string.Join(",", numbers));
         }
     }           
 }
