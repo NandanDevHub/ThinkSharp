@@ -81,6 +81,12 @@ namespace ThinkSharp.Utils
                 case 24:
                     ArmStrongNumber.Run();
                     break;
+                case 25:
+                    InsertionSort.Run();
+                    break;
+                case 26:
+                    SelectionSort.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
