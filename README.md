@@ -1,4 +1,4 @@
-# ThinkSharp
+# ThinkSharp 
 
 ThinkSharp is a practical playground for solving coding problems and building strong logic skills using C#.  
 
