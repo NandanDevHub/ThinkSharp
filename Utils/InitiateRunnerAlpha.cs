@@ -87,6 +87,15 @@ namespace ThinkSharp.Utils
                 case 26:
                     SelectionSort.Run();
                     break;
+                case 27:
+                    P27_Pattern_1D.Run();
+                    break;
+                case 28:
+                    P28_What1DPattern.Run();
+                    break;
+                case 29:
+                    P29_Rectangle_of_Stars.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
