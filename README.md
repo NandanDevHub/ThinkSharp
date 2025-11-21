@@ -18,7 +18,7 @@ This repo is designed for step-by-step learning of logic building, data structur
 2. Open in Visual Studio or your favorite C# IDE  
 3. Run the project  
 4. Select the problem number you want to run from the console input  
-5. Explore the Problems folder to add or improve solutions  
+5. Explore the Problems folder to add or improve solutions 
 
 ## Contribution
 
