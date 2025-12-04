@@ -24,7 +24,7 @@ namespace ThinkSharp.Problems
             {
                 for (int j = 1; j <= c; j++)
                 {
-                    Console.WriteLine(j);
+                    Console.Write(j);
                 }
 
                 Console.WriteLine();
