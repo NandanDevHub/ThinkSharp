@@ -96,6 +96,9 @@ namespace ThinkSharp.Utils
                 case 29:
                     P29_Rectangle_of_Stars.Run();
                     break;
+                case 30:
+                    P30_Rectangle_of_Numbers.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
