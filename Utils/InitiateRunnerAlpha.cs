@@ -99,6 +99,15 @@ namespace ThinkSharp.Utils
                 case 30:
                     P30_Rectangle_of_Numbers.Run();
                     break;
+                case 31:
+                    P31_Rectangle_Row_Numbers.Run();
+                    break;
+                case 32:
+                    P32_Continuous_Counting_Rectangle.Run();
+                    break;
+                case 33:
+                    P33_Alternating_Rows.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
