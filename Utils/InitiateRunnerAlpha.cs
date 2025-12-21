@@ -108,6 +108,12 @@ namespace ThinkSharp.Utils
                 case 33:
                     P33_Alternating_Rows.Run();
                     break;
+                case 34:
+                    P34_Alternating_Columns.Run();
+                    break;
+                case 35:
+                    P35_Hollow_Rectangle.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
