@@ -2,7 +2,7 @@
 
 ThinkSharp is a practical playground for solving coding problems and building strong logic skills using C#.  
 
-This repo is designed for step-by-step learning of logic building, data structures, algorithms, and problem solving patterns with a focus on C#
+This repo is designed for step-by-step learning of logic building, data structures, algorithms, and problem solving patterns with a focus on C#.
 
 ## Features
 
