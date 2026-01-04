@@ -114,6 +114,15 @@ namespace ThinkSharp.Utils
                 case 35:
                     P35_Hollow_Rectangle.Run();
                     break;
+                case 36:
+                    P36_Border_Numbers.Run();
+                    break;
+                case 37:
+                    P37_Left_Angled_Triangle.Run();
+                    break;
+                case 38:
+                    P38_Left_Angled_Triangle_Desc.Run();
+                    break;
                 default:
                     Console.WriteLine("Problem Number is currently not available.");
                     break;
